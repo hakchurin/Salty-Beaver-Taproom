@@ -1,0 +1,126 @@
+header {
+    background-image: url("assets/images/barHeader.jpeg");
+    background-size: cover;
+    height: 420px;
+    h2 {
+        color: white;
+        width: 40%;
+        margin-left: 60%;
+        padding-top: 7%;
+        font-size: 7rem;
+        margin-top: 0;
+        font-family: arial;
+    }
+}
+body {
+    background-color: #d3dddc;
+    margin: 0;
+}
+.Menu-Item h3 {
+    font-size: 24px;
+    font-family: arial;
+}
+p.menu-descpription {
+    font-family: arial;
+}
+.menuContainer {
+    width: 50%;
+    height: 50%;
+    font-family: Trebuchet;
+}
+.sideMenu {
+    border: 5px solid #446455;
+    background-color: rgba( 215,126,8,.5);
+    width: 35%;
+    float: right;
+    margin-top: 5em;
+    margin-right: 5%;
+    button {
+        display: block;
+        margin: 12% 33px auto auto;
+        height: 40px;
+        width: 100px;
+        font-family: arial;
+        font-size: 1.05rem;
+    }
+    h2 {
+        text-align: center;
+        color: #446455;
+        font-size: 45px;
+        font-family: arial;
+    }
+}
+.price-tax {
+    float: right;
+    padding-right: 20px;
+    text-align: right;
+    font-size: 1.3rem;
+    font-family: arial;
+}
+.order-list h2 {
+    color: black;
+    font-size: 1.5rem;
+}
+.category-title {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #446455;
+    font-weight: bold;
+    font-family: arial;
+}
+.menu-price {
+    font-size: 20px;
+    margin-top: -15px;
+}
+p.menu-price::before {
+    content: "$";
+}
+ul {
+    list-style-type: none;
+}
+button {
+    background-color: #446455;
+    color: white;
+    border-radius: 7px;
+}
+button:hover {
+    background-color: #d77e08;
+    color: black;
+}
+.confirmationContainer {
+    display: none;
+    top: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.8);
+    .confirmContainer {
+        border: 5px solid #d77e08;
+        background-color: #446455;
+        width: 45%;
+        margin: 10% auto auto;
+        h2 {
+            text-align: center;
+            font-size: 4rem;
+            font-family: arial;
+            color: #d77e08;
+        }
+        .end-order {
+            text-align: center;
+            h3 {
+                font-size: 2rem;
+            }
+        }
+        p {
+            text-align: center;
+            font-family: arial;
+            font-size: 1.3rem;
+        }
+        button {
+            margin-left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            background-color: #d77e08;
+        }
+    }
+}
