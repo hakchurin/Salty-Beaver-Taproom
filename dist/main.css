@@ -1,13 +1,13 @@
 header {
-  background-image: url("assets/images/barHeader.jpeg");
+  background-image: url("assets/images/barHeader.jpg");
   background-size: cover;
   height: 420px; }
   header h2 {
     color: white;
-    width: 40%;
-    margin-left: 60%;
-    padding-top: 7%;
-    font-size: 7rem;
+    width: 43%;
+    margin-left: 55%;
+    padding-top: 15%;
+    font-size: 5rem;
     margin-top: 0;
     font-family: arial; }
 
