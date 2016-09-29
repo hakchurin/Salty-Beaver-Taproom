@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import Backbone from 'backbone';
 import requestSettings from './menuServer';
-//import order from './order';
+import order from './order';
 import renderMenu from './renderMenu';
 import confirmationOrder from './confirmation';
 import renderEntireOrder from './renderEntireOrder';
@@ -23,15 +23,14 @@ const Router = Backbone.Router.extend({
         menuServer.fetch();
         var menuServer = renderPosts(sideMenu);
         $('.sideMenu').empty().append(Order);
-
     },
     renderOrderFunction: function() {
         $('side').empty().append(Order);
     },
 
     confirmationOrderFunction: function() {
-        let $confirmation = confirmationOrder();
-        $('.confirmationContainer').empty().append($confirmation);
+        let $confirmationOrder = confirmationOrder(order);
+        $('.confirmationContainer').empty().append($confirmationOrder);
     }
 });
 
