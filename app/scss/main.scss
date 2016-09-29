@@ -16,9 +16,55 @@ body {
     background-color: #d3dddc;
     margin: 0;
 }
+
+button.delete {
+  margin: 0;
+  padding: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+ul.order-list{
+  padding:0;
+}
+
+li.sideList{
+  display: flex;
+justify-content: initial;
+margin-bottom:.5rem;
+}
+
+ul.menuContainer{
+  margin-top:4rem;
+}
+
+ul.menu-list{
+  margin-bottom:3rem;
+}
+
+h2.category-title{
+  margin: 0;
+padding: 0;
+margin-left: 2rem;
+margin-bottom:2rem;
+}
+
+li.Menu-Item{
+  text-align: left;
+  margin-bottom:3rem;
+}
+
+.itemPrice{
+      border-bottom: 2px dashed;
+  display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .Menu-Item h3 {
     font-size: 24px;
     font-family: arial;
+    margin:0;
+        width: 35rem;
 }
 p.menu-descpription {
     font-family: arial;
@@ -28,21 +74,23 @@ p.menu-descpription {
     height: 50%;
     font-family: Trebuchet;
 }
+button.order-now {
+    display: block;
+    margin: 12% 33px auto auto;
+    height: 40px;
+    width: 100px;
+    font-family: arial;
+    font-size: 1.05rem;
+}
 .sideMenu {
     border: 5px solid #446455;
-    background-color: rgba( 215,126,8,.5);
+    background-color: #C9C4CA;
     width: 35%;
     float: right;
     margin-top: 5em;
-    margin-right: 5%;
-    button {
-        display: block;
-        margin: 12% 33px auto auto;
-        height: 40px;
-        width: 100px;
-        font-family: arial;
-        font-size: 1.05rem;
-    }
+    margin-right: 2%;
+
+
     h2 {
         text-align: center;
         color: #446455;
@@ -59,7 +107,9 @@ p.menu-descpription {
 }
 .order-list h2 {
     color: black;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    margin:0;
+    padding: 0;
 }
 .category-title {
     font-size: 5rem;
@@ -70,7 +120,7 @@ p.menu-descpription {
 }
 .menu-price {
     font-size: 20px;
-    margin-top: -15px;
+    margin:0;
 }
 p.menu-price::before {
     content: "$";

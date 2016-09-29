@@ -22,9 +22,10 @@ function renderEntireOrder() {
     `);
 
     order.get('items').forEach(function(orderItem,i) {
-      $li = $(`<li>
+      $li = $(`<li class="sideList">
+          <button class="delete"> X</button>
       <h2>${orderItem.item} $${orderItem.price}</h2>
-      <button class="delete"> delete</button>
+
     </li>`);
         $entireOrder.find('.order-list').append($li);
 
