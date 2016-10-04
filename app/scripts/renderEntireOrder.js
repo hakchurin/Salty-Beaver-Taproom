@@ -13,23 +13,29 @@ function renderEntireOrder() {
       <h2> Final Order </h2>
       <ul class="order-list">
       </ul>
-      <div class= "price-tax">
-        <p> Tax $${order.get('tax').toFixed(2)}</p>
-        <p> Total $${order.get('price')}</p>
+        <div class= "price-tax">
+        <p class="tax"> Tax $${order.get('tax').toFixed(2)}</p>
+        <p class="total"> Total $${order.get('price')}</p>
         </div>
+
         <button class="order-now">order now </button>
+
     </div>
     `);
 
     order.get('items').forEach(function(orderItem,i) {
+      console.log('delete');
+
       $li = $(`<li class="sideList">
-          <button class="delete"> X</button>
+      <i class="fa fa-trash-o" class="delete" aria-hidden="true"></i>
       <h2>${orderItem.item} $${orderItem.price}</h2>
 
     </li>`);
+
+
         $entireOrder.find('.order-list').append($li);
 
-        $entireOrder.find('.delete').on('click', function(e) {
+        $entireOrder.find('.fa fa-trash-o').on('click', function(e) {
         order.deleteItem(orderItem,i)
         $entireOrder.find('li').eq(i).remove();
         renderEntireOrder();

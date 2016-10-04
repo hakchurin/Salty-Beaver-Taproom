@@ -12,8 +12,11 @@ function confirmationOrder() {
         <h2> Confirmation </h2>
         <ul class="end-order">
         </ul>
-        <p> Tax $ ${order.get('tax').toFixed(2)}</p>
-        <p>  Total $ ${order.get('price')}</p>
+        <div class="confirmAmount">
+        <p class="confirmTax"> Tax $ ${order.get('tax').toFixed(2)}</p>
+        <p class="confirmTotal">   Total $ ${order.get('price')}</p>
+        </div>
+
         <button>close </button>
       </div>
       `);

@@ -17,6 +17,16 @@ body {
     margin: 0;
 }
 
+
+p.tax{
+    margin-bottom: .5rem;
+}
+
+p.total{
+  margin:0;
+}
+
+
 button.delete {
   margin: 0;
   padding: 0;
@@ -75,41 +85,45 @@ p.menu-descpription {
     font-family: Trebuchet;
 }
 button.order-now {
-    display: block;
-    margin: 12% 33px auto auto;
-    height: 40px;
-    width: 100px;
-    font-family: arial;
-    font-size: 1.05rem;
+  display: block;
+margin: 12% 50px 11px auto;
+width: 100px;
+font-family: arial;
+font-size: 1.05rem;
 }
 .sideMenu {
-    border: 5px solid #446455;
-    background-color: #C9C4CA;
-    width: 35%;
-    float: right;
-    margin-top: 5em;
-    margin-right: 2%;
+  border: 5px solid #6A676A;
+background-color: #C9C4CA;
+width: 35%;
+float: right;
+margin-top: 5em;
+margin-right: 2%;
 
-
-    h2 {
-        text-align: center;
-        color: #446455;
-        font-size: 45px;
-        font-family: arial;
-    }
 }
+
+.sideMenu h2 {
+      text-align: center;
+      color: #446455;
+      font-size: 45px;
+      font-family: arial;
+      margin: 9px 5px auto auto;
+
+  }
+
+
 .price-tax {
     float: right;
     padding-right: 20px;
     text-align: right;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: arial;
 }
 .order-list h2 {
     color: black;
-    font-size: 1rem;
+    font-size: .9rem;
     margin:0;
     padding: 0;
+        margin-left: 0.5rem;
 }
 .category-title {
     font-size: 5rem;
@@ -145,32 +159,59 @@ button:hover {
     width: 100vw;
     background-color: rgba(0,0,0,0.8);
     .confirmContainer {
-        border: 5px solid #d77e08;
-        background-color: #446455;
-        width: 45%;
-        margin: 10% auto auto;
-        h2 {
-            text-align: center;
+      border: 5px solid #6A676A;
+      background-color: #C9C4CA;
+      width: 45%;
+      margin: 10% auto auto;
+    h2 {
+            // text-align: center;
             font-size: 4rem;
             font-family: arial;
-            color: #d77e08;
+            color: #446455;
+            margin: 25px 2px auto auto;
         }
         .end-order {
             text-align: center;
             h3 {
-                font-size: 2rem;
+                font-size: 1rem;
             }
         }
         p {
-            text-align: center;
             font-family: arial;
-            font-size: 1.3rem;
+            font-size: 1rem;
         }
         button {
-            margin-left: 50%;
-            transform: translateX(-50%);
+            // margin-left: 50%;
             color: white;
-            background-color: #d77e08;
+            background-color:#446455;
+            // margin: 71px 9px 8px 252px;
+            display: block;
+            margin: 12% 91px 11px auto;
+            width: 100px;
+            font-family: arial;
+            font-size: 1.05rem;
+
         }
     }
+}
+
+.confirmAmount{
+  float:right;
+  margin: 33px 35px 4px 2px;
+
+}
+
+p.confirmTax{
+  margin: 0;
+  font-size: 1rem;
+  // text-align: left;
+      margin-bottom: .5rem;
+
+}
+
+p.confirmTotal{
+  margin: 0;
+  font-size: 1rem;
+  // text-align: left;
+
 }
