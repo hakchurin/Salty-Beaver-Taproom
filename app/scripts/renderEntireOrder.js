@@ -27,7 +27,7 @@ function renderEntireOrder() {
       console.log('delete');
 
       $li = $(`<li class="sideList">
-      <i class="fa fa-trash-o" class="delete" aria-hidden="true"></i>
+     <i class="fa fa-trash-o delete"  aria-hidden="true"></i>
       <h2>${orderItem.item} $${orderItem.price}</h2>
 
     </li>`);
@@ -35,7 +35,7 @@ function renderEntireOrder() {
 
         $entireOrder.find('.order-list').append($li);
 
-        $entireOrder.find('.fa fa-trash-o').on('click', function(e) {
+        $entireOrder.find('.delete').on('click', function(e) {
         order.deleteItem(orderItem,i)
         $entireOrder.find('li').eq(i).remove();
         renderEntireOrder();

@@ -3,16 +3,16 @@ header {
   background-size: cover;
   height: 420px; }
   header h2 {
-    color: white;
-    width: 43%;
-    margin-left: 55%;
-    padding-top: 15%;
-    font-size: 5rem;
+    color: #E1ECEC;
+    width: 100%;
+    padding-top: 17%;
+    font-size: 7.5rem;
     margin-top: 0;
-    font-family: arial; }
+    text-align: center;
+    font-family: 'Indie Flower', cursive; }
 
 body {
-  background-color: #d3dddc;
+  background-color: #E1ECEC;
   margin: 0; }
 
 p.tax {
@@ -58,7 +58,7 @@ li.Menu-Item {
   justify-content: space-around; }
 
 .Menu-Item h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-family: arial;
   margin: 0;
   width: 35rem; }
@@ -72,15 +72,19 @@ p.menu-descpription {
   font-family: Trebuchet; }
 
 button.order-now {
-  display: block;
-  margin: 12% 50px 11px auto;
-  width: 100px;
+  margin: 6% 128px 0px 0px;
+  width: 100%;
   font-family: arial;
-  font-size: 1.05rem; }
+  font-size: 1.05rem;
+  height: 60px;
+  background-color: #446455;
+  border: none; }
+
+button.order-now:hover {
+  background-color: #65917D; }
 
 .sideMenu {
-  border: 5px solid #6A676A;
-  background-color: #C9C4CA;
+  background-color: #C5CFCF;
   width: 35%;
   float: right;
   margin-top: 5em;
@@ -90,7 +94,7 @@ button.order-now {
   text-align: center;
   color: #446455;
   font-size: 45px;
-  font-family: arial;
+  font-family: Abril;
   margin: 9px 5px auto auto; }
 
 .price-tax {
@@ -112,7 +116,7 @@ button.order-now {
   text-transform: uppercase;
   color: #446455;
   font-weight: bold;
-  font-family: arial; }
+  font-family: Abril; }
 
 .menu-price {
   font-size: 20px;
@@ -124,13 +128,20 @@ p.menu-price::before {
 ul {
   list-style-type: none; }
 
-button {
+button.add-to-order {
   background-color: #446455;
   color: white;
-  border-radius: 7px; }
+  border: none;
+  width: 1.8rem;
+  height: 1.3rem;
+  margin-right: 0.5rem;
+  margin-bottom: .3rem; }
 
-button:hover {
-  background-color: #d77e08;
+i.fa.fa-plus {
+  font-size: 1rem; }
+
+button.add-to-order:hover {
+  background-color: #65917D;
   color: black; }
 
 .confirmationContainer {
@@ -141,30 +152,35 @@ button:hover {
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.8); }
   .confirmationContainer .confirmContainer {
-    border: 5px solid #6A676A;
-    background-color: #C9C4CA;
+    background-color: #C5CFCF;
     width: 45%;
     margin: 10% auto auto; }
     .confirmationContainer .confirmContainer h2 {
+      text-align: center;
       font-size: 4rem;
-      font-family: arial;
+      font-family: Abril;
       color: #446455;
       margin: 25px 2px auto auto; }
     .confirmationContainer .confirmContainer .end-order {
-      text-align: center; }
+      text-align: left; }
       .confirmationContainer .confirmContainer .end-order h3 {
-        font-size: 1rem; }
+        font-size: 1.3rem; }
     .confirmationContainer .confirmContainer p {
       font-family: arial;
       font-size: 1rem; }
-    .confirmationContainer .confirmContainer button {
-      color: white;
-      background-color: #446455;
-      display: block;
-      margin: 12% 91px 11px auto;
-      width: 100px;
-      font-family: arial;
-      font-size: 1.05rem; }
+
+.confirmationContainer .confirmContainer button {
+  color: white;
+  background-color: #446455;
+  display: block;
+  width: 100%;
+  font-family: arial;
+  font-size: 1.05rem;
+  border: none;
+  height: 3rem;
+  margin: 0; }
+  .confirmationContainer .confirmContainer button:hover {
+    background-color: #65917D; }
 
 .confirmAmount {
   float: right;
@@ -172,11 +188,13 @@ button:hover {
 
 p.confirmTax {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  text-align: right;
   margin-bottom: .5rem; }
 
 p.confirmTotal {
   margin: 0;
-  font-size: 1rem; }
+  font-size: 1.3rem;
+  text-align: right; }
 
 /*# sourceMappingURL=main.css.map */
